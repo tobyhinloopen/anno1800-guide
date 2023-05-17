@@ -1,0 +1,60 @@
+body,
+html {
+  background-color: #212121;
+  color: rgba(255, 255, 255, .8)
+}
+
+.form-check-input {
+  background-color: #424242;
+  border-color: #424242;
+  border: none;
+}
+
+.form-check-input:focus {
+  box-shadow: none;
+}
+
+.form-check-input:checked {
+  background-color: #424242;
+  border-color: #424242;
+}
+
+.todo-list {
+  margin-bottom: 1.0rem;
+}
+
+.todo-item {
+  display: block;
+  padding: 0.75rem calc(var(--bs-gutter-x) * .5);
+  border-top: 1px solid #616161;
+  border-bottom: 1px solid #616161;
+  margin: 0 calc(var(--bs-gutter-x) * -.5);
+}
+
+.todo-item:has(.form-check-input:focus) {
+  background-color: #263238;
+}
+
+.todo-item+.todo-item {
+  border-top: none;
+}
+
+.todo-item .form-check-label {
+  color: rgba(255, 255, 255, .9);
+}
+
+.todo-item:has(:checked) .form-check-label {
+  opacity: 0.6;
+}
+
+/* .todo-item .form-check {
+  padding-left: 0;
+}
+
+.todo-item .form-check-input {
+  display: none;
+} */
+
+.inline-item {
+  white-space: nowrap;
+}
