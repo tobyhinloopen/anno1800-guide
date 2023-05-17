@@ -58,3 +58,11 @@ html {
 .inline-item {
   white-space: nowrap;
 }
+
+.show-if-target {
+  display: none;
+}
+
+.show-if-target:target {
+  display: block;
+}
