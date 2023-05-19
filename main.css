@@ -66,3 +66,7 @@ html {
 .show-if-target:target {
   display: block;
 }
+
+.mono {
+  font-family: monospace;
+}
